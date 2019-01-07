@@ -43,23 +43,42 @@
     }
 }
 
+.wheel-joint-2
+{
+    animation: wheel-joint-2 3s linear infinite;
+}
+
+@keyframes wheel-joint-2
+{
+    from
+    {
+        transform: rotate(-10deg);
+    }
+
+    to
+    {
+        transform: rotate(350deg);
+    }
+}
+
 .smoke
 {
-    animation: first-smoke 3s linear infinite;
+    animation: first-smoke 4s linear 1s infinite;
+    transform: scale(1.2);
 }
 
 @keyframes first-smoke
 {
     to
     {
-        transform: translate(40px, -60px) scale(.9);
+        transform: translate(20px, -60px) scale(1.9);
         opacity: 0;
     }
 }
 
 .smoke-2
 {
-    animation: second-smoke 3s linear infinite;
+    animation: second-smoke 4s linear 2s infinite;
     transform: scale(1.5);
 }
 
@@ -67,37 +86,37 @@
 {
     to
     {
-        transform: translate(20px, -40px) scale(1.2);
-        opacity: .2;
+        transform: translate(20px, -70px) scale(2);
+        opacity: 0;
     }
 }
 
 .smoke-3
 {
-    animation: third-smoke 3s linear infinite;
-    transform: scale(2.5);
+    animation: third-smoke 4s linear 3s infinite;
+    transform: scale(1.5);
 }
 
 @keyframes third-smoke
 {
     to
     {
-        transform: translateY(-15px) scale(2.5);
-        opacity: .4;
+        transform: translate(10px, -55px) scale(2.5);
+        opacity: 0;
     }
 }
 
 .smoke-4
 {
-    animation: fourth-smoke 3s linear infinite;
-    transform: scale(2);
+    animation: fourth-smoke 4s linear 4s infinite;
+    transform: scale(1.2);
 }
 
 @keyframes fourth-smoke
 {
     to
     {
-        transform: translate(10px, -30px) scale(1.8);
-        opacity: .3;
+        transform: translate(10px, -40px) scale(2);
+        opacity: 0;
     }
 }
